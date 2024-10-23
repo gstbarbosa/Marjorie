@@ -1,0 +1,12 @@
+/* Personalização de estilos */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #007bff; /* Cor primária do Bootstrap */
+}
+
+.container {
+  margin-top: 30px;
+}
