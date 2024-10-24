@@ -4,9 +4,27 @@ body {
 }
 
 h1 {
-  color: #007bff; /* Cor primária do Bootstrap */
+  color: #d9a871; 
 }
 
 .container {
   margin-top: 30px;
 }
+
+.btn{
+  background-color: #d9a871;
+  border: #d9a871; /*botao de detalhes compra etc botoes em geral */
+}
+.btn:hover{
+ transition: 0.5s;
+ background-color: #ac865a;
+  transform: scale(1.03);
+}
+
+.card-title{
+ color: #d9a871; /*Texto de cima */
+}
+.card{
+  border: #fff; /*borda das imagens */
+}
+
