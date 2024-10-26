@@ -1,14 +1,15 @@
 /* Personalização de estilos */
+/* COMENTADA PARA AJUDAR NO ESTUDO */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* fontes */
 }
 
 h1 {
-  color: #d9a871; 
+  color: #d9a871; /* cor do h1 do html */
 }
 
 .container {
-  margin-top: 30px;
+  margin-top: 30px; 
 }
 
 .btn{
@@ -16,9 +17,9 @@ h1 {
   border: #d9a871; /*botao de detalhes compra etc botoes em geral */
 }
 .btn:hover{
- transition: 0.5s;
- background-color: #ac865a;
-  transform: scale(1.03);
+ transition: 0.5s; /* transisao de para cores ou tamanhos com tempo de dalayes */
+ background-color: #ac865a; 
+  transform: scale(1.03); /* mudar o tamanho  do botão ao passar com o mouse por cima */
 }
 
 .card-title{
@@ -28,13 +29,44 @@ h1 {
   border: #fff; /*borda das imagens */
 }
 
+/* DETALHES DO PRODUTO*/
+
+.image-container {
+  display: flex;
+  align-items: flex-start; /* alinha as imagens na parte superior */
+}
+
+.main-image {
+  max-width: 80%; /* ajuste o tamanho conforme necessário */
+  margin-right: 20px; /* espaçamento entre a imagem principal e as secundárias */
+}
+
 .secondary-images {
   display: flex;
-  gap: 10px;
-  margin-top: 15px;
+  flex-direction: column; /* para colocar as imagens em coluna */
+  gap: 10px; /* espacamrnto entre as imagens secundárias */
 }
 
 .secondary-images img {
-  max-width: 100px; /* Ajuste o tamanho conforme necessário */
-  cursor: pointer;
+  max-width: 200px; /* Ajuste o tamanho conforme necessário */
+  cursor: pointer; /* muda o cursor do mouse de seta para a máozinha com o dedo apontado */
+}
+
+/* PARA SER RESPONSIVO */
+@media (max-width: 768px) {
+  .image-container {
+      flex-direction: column; /* Muda a direção para coluna em telas menores */
+      align-items: center; /* Centraliza as imagens */
+  }
+  
+  .main-image {
+      max-width: 100%; /* A imagem principal ocupa 100% da largura em telas menores */
+      margin-right: 0; /* Remove o espaçamento */
+  }
+
+  .secondary-images {
+    margin-top: 15px;/* Margem da imagem lprincipal em cima */
+      align-items: center; /* Centraliza as imagens secundárias abaixo da imagem principal */
+      flex-direction: row; /* Alinha na horizontal as imagens secundarias quando o diispositivo for menor de 768px */
+  }
 }
