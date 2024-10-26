@@ -6,6 +6,7 @@ function loadProductDetails() {
     if (product) {
         document.getElementById('product-details').innerHTML = `
             <h2>${product.name}</h2>
+            <img src="${product.image}" class="img-fluid"/>
             <p>${product.description}</p>
             <p><strong>Preço:</strong> R$${product.price.toFixed(2)}</p>
         `;
