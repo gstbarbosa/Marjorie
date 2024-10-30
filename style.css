@@ -30,7 +30,7 @@
   word-break:normal;
   margin: 100px
 }
-hr{
-  color:black;
-  height: 2px;
+.linha{
+  background-color: #A88658;
+  height:4px;
 }
