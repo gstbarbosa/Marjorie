@@ -7,7 +7,10 @@ const products = [
   { id: 4, name: "Produto 1", description: "Descrição do Produto 1", price: 100.00, image: "../images/camisachadrez1-removebg-preview.png", secondaryImages: ["../images/camisachadrez1-removebg-preview.png", "../imagesslide/Slide 1"] },
   { id: 5, name: "Produto 2", description: "Descrição do Produto 2", price: 150.00, image: "../images/logo.png", secondaryImages: ["../images/camisachadrez1-removebg-preview.png", "../imagesslide/Slide 1"] },
   { id: 6, name: "Produto 3", description: "Descrição do Produto 3", price: 200.00, image: "../images/logo.png", secondaryImages: ["../images/camisachadrez1-removebg-preview.png", "../imagesslide/Slide 1"] },
-  
+  { id: 7, name: "Produto 3", description: "Descrição do Produto 3", price: 200.00, image: "../images/logo.png", secondaryImages: ["../images/camisachadrez1-removebg-preview.png", "../imagesslide/Slide 1"] },
+  { id: 8, name: "Produto 3", description: "Descrição do Produto 3", price: 200.00, image: "../images/logo.png", secondaryImages: ["../images/camisachadrez1-removebg-preview.png", "../imagesslide/Slide 1"] },
+  { id: 9, name: "Produto 1", description: "Descrição do Produto 1", price: 100.00, image: "../images/camisachadrez1-removebg-preview.png", secondaryImages: ["../images/camisachadrez1-removebg-preview.png", "../images/camisachadrez1-removebg-preview.png"]},
+
 ];
 
 function loadProducts() {

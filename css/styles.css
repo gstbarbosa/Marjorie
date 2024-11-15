@@ -167,22 +167,36 @@ h1 {
     flex-direction: column; /* Coloca product-details e suggestions-container em coluna */
     align-items: stretch; /* Faz com que ambos os contêineres ocupem toda a largura */
 }
+.product-container {
+  flex-direction: column; /* Coloca product-details e suggestions-container em coluna */
+  align-items: stretch; /* Faz com que ambos os contêineres ocupem toda a largura */
+}
+
+/* Centraliza o suggestions-container-wrapper */
+.suggestions-container-wrapper {
+  width: 100%; /* Garante que tenha a mesma largura do container de produto */
+  display: flex;
+  flex-direction: column; /* Coloca título e container de sugestões em coluna */
+  gap: 10px; /* Espaçamento entre o título e o container */
+  align-items: center; /* Centraliza o container de sugestões */
+}
 
 /* Estilo para suggestions-container no mobile */
 #suggestions-container {
-    flex-direction: row; /* Alinha os itens na horizontal */
-    gap: 10px; /* Espaçamento entre os itens */
-    width: 100%; /* Faz com que ocupe toda a largura disponível */
-    max-width: none; /* Remove o limite de largura */
-    max-height: none; /* Remove o limite de altura */
-    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
-}
-.suggestions-container-wrapper {
-  align-items: flex-start; /* Alinha à esquerda em telas menores */
+  display: flex; /* Alinha os itens na horizontal */
+  flex-direction: row; /* Faz com que os itens fiquem na horizontal */
+  gap: 10px; /* Espaçamento entre os itens */
+  width: 90%; /* Aumenta a largura do container para 90% da tela */
+  max-width: 800px; /* Limita a largura máxima para 800px */
+  overflow-x: scroll; /* Força a barra de rolagem horizontal */
+  overflow-y: hidden; /* Remove a rolagem vertical */
+  white-space: nowrap; /* Impede a quebra de linha nos itens */
+  justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
+/* Ajuste no título das sugestões */
 .suggestions-title {
-  text-align: left; /* Alinha o título à esquerda */
+  text-align: left;
   width: 100%; /* Garante que o título ocupe toda a largura disponível */
 }
 }
