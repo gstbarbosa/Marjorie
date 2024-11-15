@@ -43,3 +43,14 @@ function loadProductDetails() {
 }
 
 document.addEventListener('DOMContentLoaded', loadProductDetails);
+
+// Função para selecionar o tamanho
+function selectSize(size) {
+    const sizeOptions = document.querySelectorAll('.size-option');
+    sizeOptions.forEach(option => {
+        option.classList.remove('selected');
+    });
+
+    const selectedSize = document.getElementById(`size-${size}`);
+    selectedSize.classList.add('selected');
+}

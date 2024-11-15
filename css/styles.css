@@ -136,22 +136,32 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Botão de ver mais */
-.product-card button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  cursor: pointer;
+
+
+
+
+/* Flexbox para o container de sugestões */
+.product-container {
+  display: flex;
+  justify-content: space-between; /* Espaça os itens do container (produto e sugestões) */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  gap: 20px; /* Espaçamento entre o produto e as sugestões */
+  margin-top: 20px; /* Espaço superior para o container de produtos e sugestões */
 }
 
-.product-card button:hover {
-  background-color: #0056b3;
+/* Estilo para o container de sugestões */
+#suggestions-container {
+  display: flex;
+  flex-direction: column; /* Alinha as sugestões em coluna */
+  gap: 20px; /* Espaço entre as sugestões */
+  max-width: 300px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-
-
 
 /* PARA SER RESPONSIVO */
 @media (max-width: 768px) {

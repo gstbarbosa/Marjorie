@@ -1,0 +1,75 @@
+/* Flexbox para alinhar os títulos na mesma linha */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Estilo do título "Sugestões" */
+.suggestions-title {
+    margin-left: 20px;
+}
+
+/* Flexbox no contêiner pai para os detalhes do produto e sugestões */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Estilo para o container de sugestões */
+#size-selector {
+    display: flex;
+    justify-content: flex-start; /* Alinha as opções de tamanho à esquerda */
+    gap: 10px; 
+    margin-top: 20px; /* Espaço entre os detalhes do produto e as opções de tamanho */
+    width: 100%;
+}
+
+/* Estilo para cada quadrado de tamanho */
+.size-option {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9a871;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo quando o quadrado é selecionado */
+.size-option.selected {
+    background-color: #ac865a;
+    border-color: #ac865a;
+    color: white;
+}
+
+/* Efeito de hover */
+.size-option:hover {
+    background-color: #ac865a;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    /* No mobile, vamos reorganizar os contêineres */
+    .product-container {
+        flex-direction: column; /* Coloca product-details e size-selector em coluna */
+        align-items: stretch; /* Faz com que ambos os contêineres ocupem toda a largura */
+    }
+
+    /* Estilo para size-selector no mobile */
+    #size-selector {
+        flex-direction: row; /* Alinha as opções de tamanho na horizontal */
+        justify-content: center; /* Centraliza as opções de tamanho */
+        margin-top: 20px; /* Espaço entre os detalhes do produto e as opções de tamanho */
+        gap: 10px; /* Espaçamento entre os quadrados */
+        width: 100%; /* Faz com que ocupe toda a largura disponível */
+    }
+}
