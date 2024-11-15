@@ -78,40 +78,40 @@ h1 {
 
 
 /*  */
-/* Flexbox para alinhar os títulos na mesma linha */
+
 .header {
   display: flex;
-  justify-content: space-between; /* Espaça os títulos */
-  align-items: flex-start; /* Alinha os títulos ao topo */
+  justify-content: space-between; 
+  align-items: flex-start; 
   width: 100%;
-  margin-bottom: 20px; /* Espaço abaixo dos títulos */
+  margin-bottom: 20px; 
 }
 
 
 .suggestions-title {
-  margin-left: 20px; /* espaço a esquerda para o título "Sugestões" */
+  margin-left: 20px; 
 }
 
 .product-container {
   display: flex;
-  justify-content: space-between; /* Alinha os dois containers ao longo da linha */
-  align-items: flex-start; /* Alinha os itens ao topo */
+  justify-content: space-between; 
+  align-items: flex-start; 
 }
 
 .suggestions-container-wrapper {
   display: flex;
   flex-direction: column; /* Organiza título e container em coluna */
-  gap: 10px; /* Espaço entre o título e o container */
-  align-items: flex-end; /* Alinha à direita */
+  gap: 10px; 
+  align-items: flex-end; 
 }
 
 .suggestions-title {
-  margin: 0; /* Remove margem para manter o alinhamento perfeito */
+  margin: 0; 
 }
 
 #suggestions-container {
   display: flex;
-  flex-direction: column; /* Os itens dentro do container continuam em coluna */
+  flex-direction: column; 
   gap: 20px;
   max-width: 300px;
   max-height: 70vh;
@@ -149,54 +149,56 @@ h1 {
 /* PARA SER RESPONSIVO */
 @media (max-width: 768px) {
   .image-container {
-      flex-direction: column; /* Muda a direção para coluna em telas menores */
-      align-items: center; /* Centraliza as imagens */
+      flex-direction: column; 
+      align-items: center; 
   }
   
   .main-image {
-      max-width: 100%; /* A imagem principal ocupa 100% da largura em telas menores */
-      margin-right: 0; /* Remove o espaçamento */
+      max-width: 100%; 
+      margin-right: 0; 
   }
 
   .secondary-images {
-    margin-top: 15px;/* Margem da imagem lprincipal em cima */
-      align-items: center; /* Centraliza as imagens secundárias abaixo da imagem principal */
-      flex-direction: row; /* Alinha na horizontal as imagens secundarias quando o diispositivo for menor de 768px */
+    margin-top: 15px;
+      align-items: center; 
+      flex-direction: row; 
   }
   .product-container {
-    flex-direction: column; /* Coloca product-details e suggestions-container em coluna */
-    align-items: stretch; /* Faz com que ambos os contêineres ocupem toda a largura */
+    flex-direction: column; 
+    align-items: stretch; 
 }
 .product-container {
-  flex-direction: column; /* Coloca product-details e suggestions-container em coluna */
-  align-items: stretch; /* Faz com que ambos os contêineres ocupem toda a largura */
+  flex-direction: column; 
+  align-items: stretch; 
 }
 
 /* Centraliza o suggestions-container-wrapper */
 .suggestions-container-wrapper {
-  width: 100%; /* Garante que tenha a mesma largura do container de produto */
+  width: 100%; 
   display: flex;
-  flex-direction: column; /* Coloca título e container de sugestões em coluna */
-  gap: 10px; /* Espaçamento entre o título e o container */
-  align-items: center; /* Centraliza o container de sugestões */
+  flex-direction: column; 
+  gap: 10px; 
+  align-items: center; 
 }
 
 /* Estilo para suggestions-container no mobile */
 #suggestions-container {
-  display: flex; /* Alinha os itens na horizontal */
-  flex-direction: row; /* Faz com que os itens fiquem na horizontal */
-  gap: 10px; /* Espaçamento entre os itens */
-  width: 90%; /* Aumenta a largura do container para 90% da tela */
-  max-width: 800px; /* Limita a largura máxima para 800px */
-  overflow-x: scroll; /* Força a barra de rolagem horizontal */
-  overflow-y: hidden; /* Remove a rolagem vertical */
-  white-space: nowrap; /* Impede a quebra de linha nos itens */
-  justify-content: center; /* Centraliza os itens horizontalmente */
+  display: flex; 
+  flex-direction: row; 
+  gap: 10px; 
+  width: 90%; 
+  max-width: 800px; 
+  overflow-x: scroll; 
+  overflow-y: hidden; 
+  white-space: nowrap; 
+  justify-content: center; 
 }
 
 /* Ajuste no título das sugestões */
 .suggestions-title {
   text-align: left;
-  width: 100%; /* Garante que o título ocupe toda a largura disponível */
+  width: 100%; 
 }
+
+
 }
