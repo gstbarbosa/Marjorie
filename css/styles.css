@@ -92,17 +92,26 @@ h1 {
   margin-left: 20px; /* espaço a esquerda para o título "Sugestões" */
 }
 
-/* Flexbox no contêiner pai para os detalhes do produto e sugestões */
 .product-container {
   display: flex;
-  justify-content: space-between; /* Distribui os dois contêineres lado a lado */
-  align-items: flex-start; 
+  justify-content: space-between; /* Alinha os dois containers ao longo da linha */
+  align-items: flex-start; /* Alinha os itens ao topo */
 }
 
-/* Estilo para o container de sugestões */
+.suggestions-container-wrapper {
+  display: flex;
+  flex-direction: column; /* Organiza título e container em coluna */
+  gap: 10px; /* Espaço entre o título e o container */
+  align-items: flex-end; /* Alinha à direita */
+}
+
+.suggestions-title {
+  margin: 0; /* Remove margem para manter o alinhamento perfeito */
+}
+
 #suggestions-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Os itens dentro do container continuam em coluna */
   gap: 20px;
   max-width: 300px;
   max-height: 70vh;
@@ -112,6 +121,7 @@ h1 {
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Cartões de produto */
 .product-card {
@@ -134,33 +144,6 @@ h1 {
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-
-/* Flexbox para o container de sugestões */
-.product-container {
-  display: flex;
-  justify-content: space-between; /* Espaça os itens do container (produto e sugestões) */
-  align-items: flex-start; /* Alinha os itens ao topo */
-  gap: 20px; /* Espaçamento entre o produto e as sugestões */
-  margin-top: 20px; /* Espaço superior para o container de produtos e sugestões */
-}
-
-/* Estilo para o container de sugestões */
-#suggestions-container {
-  display: flex;
-  flex-direction: column; /* Alinha as sugestões em coluna */
-  gap: 20px; /* Espaço entre as sugestões */
-  max-width: 300px;
-  max-height: 70vh;
-  overflow-y: auto;
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* PARA SER RESPONSIVO */
@@ -194,5 +177,12 @@ h1 {
     max-height: none; /* Remove o limite de altura */
     overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
 }
-  
+.suggestions-container-wrapper {
+  align-items: flex-start; /* Alinha à esquerda em telas menores */
+}
+
+.suggestions-title {
+  text-align: left; /* Alinha o título à esquerda */
+  width: 100%; /* Garante que o título ocupe toda a largura disponível */
+}
 }
