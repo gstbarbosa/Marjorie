@@ -96,7 +96,7 @@ h1 {
 .product-container {
   display: flex;
   justify-content: space-between; /* Distribui os dois contêineres lado a lado */
-  align-items: flex-start; /* Alinha os itens ao topo */
+  align-items: flex-start; 
 }
 
 /* Estilo para o container de sugestões */
