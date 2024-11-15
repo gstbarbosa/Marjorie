@@ -77,6 +77,29 @@ h1 {
 
 
 
+
+
+
+
+.product-details-container {
+  display: flex;
+  flex-direction: column; /* Organiza em coluna */
+  gap: 15px; /* Espaço entre #product-details e #size-selector */
+  width: 100%; /* Garante que ocupe a largura disponível */
+}
+
+#product-details {
+  display: block; /* Garante que o conteúdo seja exibido como bloco */
+}
+
+
+
+
+
+
+
+
+
 /*  */
 
 .header {

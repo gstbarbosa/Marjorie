@@ -24,11 +24,17 @@
 
         </div>
         <div class="product-container">
-            <div id="product-details">
-                <!-- Detalhes do produto serão carregados dinamicamente aqui -->
+            <div class="product-details-container">
+                <div id="product-details">
+                    <!-- Detalhes do produto serão carregados dinamicamente aqui -->
+                </div>
+                <div id="size-selector" class="size-selector">
+                    <div class="size-option" id="size-P" onclick="selectSize('P')">P</div>
+                    <div class="size-option" id="size-M" onclick="selectSize('M')">M</div>
+                    <div class="size-option" id="size-G" onclick="selectSize('G')">G</div>
+                </div>
             </div>
         
-            <!-- Envolva título e container em um div para o alinhamento correto -->
             <div class="suggestions-container-wrapper">
                 <h1 class="suggestions-title">Sugestões</h1>
                 <div id="suggestions-container">
@@ -36,17 +42,11 @@
                 </div>
             </div>
         </div>
-        <div id="size-selector" class="size-selector">
-            <div class="size-option" id="size-P" onclick="selectSize('P')">P</div>
-            <div class="size-option" id="size-M" onclick="selectSize('M')">M</div>
-            <div class="size-option" id="size-G" onclick="selectSize('G')">G</div>
-        </div>
+      
+
         <a href="index.html" class="btn btn-primary mt-3 mb-5">Voltar à listagem</a>
     </div>
-    
-    
-    </div>
-
+   
 
 
 

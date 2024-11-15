@@ -22,10 +22,8 @@
 /* Estilo para o container de sugestões */
 #size-selector {
     display: flex;
-    justify-content: flex-start; /* Alinha as opções de tamanho à esquerda */
-    gap: 10px; 
-    margin-top: 20px; /* Espaço entre os detalhes do produto e as opções de tamanho */
-    width: 100%;
+    justify-content: flex-start; /* Alinha opções de tamanho à esquerda */
+    gap: 10px; /* Espaçamento entre os tamanhos */
 }
 
 /* Estilo para cada quadrado de tamanho */
@@ -55,5 +53,4 @@
 .size-option:hover {
     background-color: #ac865a;
 }
-
 
