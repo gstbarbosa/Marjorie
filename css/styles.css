@@ -74,6 +74,85 @@ h1 {
   cursor: pointer; /* muda o cursor do mouse de seta para a máozinha com o dedo apontado */
 }
 
+
+
+
+/*  */
+/* Flexbox para alinhar os títulos na mesma linha */
+.header {
+  display: flex;
+  justify-content: space-between; /* Espaça os títulos */
+  align-items: flex-start; /* Alinha os títulos ao topo */
+  width: 100%;
+  margin-bottom: 20px; /* Espaço abaixo dos títulos */
+}
+
+
+.suggestions-title {
+  margin-left: 20px; /* espaço a esquerda para o título "Sugestões" */
+}
+
+/* Flexbox no contêiner pai para os detalhes do produto e sugestões */
+.product-container {
+  display: flex;
+  justify-content: space-between; /* Distribui os dois contêineres lado a lado */
+  align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+/* Estilo para o container de sugestões */
+#suggestions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cartões de produto */
+.product-card {
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do produto */
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Efeito de hover no cartão */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de ver mais */
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
 /* PARA SER RESPONSIVO */
 @media (max-width: 768px) {
   .image-container {
@@ -91,4 +170,19 @@ h1 {
       align-items: center; /* Centraliza as imagens secundárias abaixo da imagem principal */
       flex-direction: row; /* Alinha na horizontal as imagens secundarias quando o diispositivo for menor de 768px */
   }
+  .product-container {
+    flex-direction: column; /* Coloca product-details e suggestions-container em coluna */
+    align-items: stretch; /* Faz com que ambos os contêineres ocupem toda a largura */
+}
+
+/* Estilo para suggestions-container no mobile */
+#suggestions-container {
+    flex-direction: row; /* Alinha os itens na horizontal */
+    gap: 10px; /* Espaçamento entre os itens */
+    width: 100%; /* Faz com que ocupe toda a largura disponível */
+    max-width: none; /* Remove o limite de largura */
+    max-height: none; /* Remove o limite de altura */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+}
+  
 }
