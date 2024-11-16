@@ -74,13 +74,6 @@ h1 {
   cursor: pointer; /* muda o cursor do mouse de seta para a máozinha com o dedo apontado */
 }
 
-
-
-
-
-
-
-
 .product-details-container {
   display: flex;
   flex-direction: column; /* Organiza em coluna */
@@ -94,9 +87,26 @@ h1 {
 
 
 
+.price {
+  font-weight: bold;
+  color: #d9a871;
+  height: 20px;
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 30px; 
+}
+
+.price-suggestions{
 
 
+  font-weight: bold;
+  color: #d9a871;
+  height: 20px;
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 40px; 
 
+}
 
 
 

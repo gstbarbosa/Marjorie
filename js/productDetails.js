@@ -8,7 +8,7 @@ function loadProductDetails() {
             <h2>${product.name}</h2>
             <img src="${product.image}" class="img-fluid"/>
             <p>${product.description}</p>
-            <p><strong>Preço:</strong> R$${product.price.toFixed(2)}</p>
+            <p class="price"><strong></strong>R$${product.price.toFixed(2)}</p>
         `;
     } else {
         document.getElementById('product-details').innerHTML = '<p>Produto não encontrado!</p>';
@@ -34,7 +34,7 @@ function loadProductDetails() {
         <div class="container mt-3">
         <h2>${product.name}</h2>
         <p>${product.description}</p>
-        <p><strong>Preço:</strong> R$${product.price.toFixed(2)}</p>
+        <p class="price"><strong></strong> R$${product.price.toFixed(2)}</p>
         </div>
     `;
     } else {

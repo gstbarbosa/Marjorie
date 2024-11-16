@@ -7,7 +7,7 @@ products.forEach(product => {
         <img src="${product.image}" alt="${product.name}">
         <h3>${product.name}</h3>
         <p>${product.description}</p>
-        <p><strong></strong> R$${product.price.toFixed(2)}</p>
+        <p class="price-suggestions"><strong></strong> R$${product.price.toFixed(2)}</p>
         <a href="product-suggestions.html?id=${product.id}" class="btn btn-primary">Ver detalhes</a>
 
     `;
