@@ -5,19 +5,18 @@ body {
 }
 
 .navbar-custom {
-background-color: #2b292a; /* backgroud color da navbar*/
+  background-color: #2b292a; /* backgroud color da navbar*/
+  height: 140px;
 
 }
 .nav-item a {
-
-color: #fff; /* cor do texto da navbar */
+  color: #fff; /* cor do texto da navbar */
 }
 
 .nav-item a:hover{
-
-transition: 0.5s; /* delay para mudança de cor e escala */
-transform: scale(1.03);  /*Muda o tamanho quando passa com o mouse acima */
-color: #d9a871; /*cor do texto da nav bar quando passar o mouse */
+  transition: 0.5s; /* delay para mudança de cor e escala */
+  transform: scale(1.03);  /*Muda o tamanho quando passa com o mouse acima */
+  color: #d9a871; /*cor do texto da nav bar quando passar o mouse */
 
 }
 
@@ -92,25 +91,7 @@ h1 {
   display: block; /* Garante que o conteúdo seja exibido como bloco */
 }
 
-
-
-
-
-
-
-
-
 /*  */
-
-.header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: flex-start; 
-  width: 100%;
-  margin-bottom: 20px; 
-}
-
-
 .suggestions-title {
   margin-left: 20px; 
 }
