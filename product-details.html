@@ -34,9 +34,19 @@
                     <div class="size-option" id="size-G" onclick="selectSize('G')">G</div>
                 </div>
 
-                <div class="d-grid ">
-                    <button class="btn btn-primary" type="button" style="width: 260px; height: 50px;">Botão 1</button>
+                <!-- 260px outro estilo de botao -->
+                <div class="d-flex gap-2">
+                    <button class="btn btn-primary" type="button" style="width: 350px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                        <i class="ph ph-basket" style="font-size: 24px; margin-right: 10px;"></i>
+                        <span>COMPRAR</span>
+                    </button>
+                
+                    <button class="btn btn-secundary" type="button" style="width: 350px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                        <i class="ph ph-shopping-cart" style="font-size: 24px; margin-right: 10px;"></i>
+                        <span>CARRINHO</span>
+                    </button>
                 </div>
+                
                 
             </div>
 
@@ -67,6 +77,7 @@
     <script src="js/products.js"></script>
     <script src="js/productDetails.js"></script>
     <script src="js/suggestions.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </body>
 
 </html>

@@ -38,11 +38,26 @@ h1 {
   background-color: #d9a871;
   border: #d9a871; /*botao de detalhes compra etc botoes em geral */
 }
+.btn-secundary{
+  background-color: #ac865a; 
+color: #fff;
+
+
+
+}
 .btn:hover{
  transition: 0.5s; /* transisao de para cores ou tamanhos com tempo de dalayes */
  background-color: #ac865a; 
   transform: scale(1.03); /* mudar o tamanho  do botão ao passar com o mouse por cima */
 }
+
+.btn-secundary:hover{
+  transition: 0.5s; /* transisao de para cores ou tamanhos com tempo de dalayes */
+  background-color: #d9a871; 
+   transform: scale(1.03); /* mudar o tamanho  do botão ao passar com o mouse por cima */
+   color:white ;
+ }
+
 
 .card-title{
  color: #d9a871; /*Texto de cima */
