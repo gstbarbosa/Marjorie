@@ -244,3 +244,20 @@ color: #fff;
 
 
 }
+
+.texto{
+  word-break: normal;
+  margin: 100px;
+}
+.linha{
+  background-color: #a88658;
+  height: 4px;
+}
+#titulo{
+  height: 100px;
+  display:flex;
+  align-items: center;
+  & h1{
+    margin-left: 100px;
+  }
+}
