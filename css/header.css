@@ -78,7 +78,7 @@
   color: white;
   font-size: 24px;
   cursor: pointer;
-  display: none; /* Hidden by default, shown on smaller screens */
+  display: none; 
 }
 
 .header-collapse {
@@ -109,7 +109,13 @@
 
   .header-container {
     flex-direction: column;
-  }
+    align-items: flex-start; 
+    }
+
+    .header-brand {
+      order: 1; 
+      align-self: flex-start; 
+    }
 
   .user-div{
     display: none;
@@ -117,9 +123,9 @@
 
   .header-toggler {
     display: block;
-    /* position: fixed;
-    top: 55px;
-    right: 10px; */
+    order: 2; 
+    align-self: flex-end; 
+    margin-top: -80px; 
     color: #A88658;
   }
 
@@ -139,6 +145,11 @@
     flex-direction: column;
     padding: 10px;
   }
+
+  .search-div {
+    order: 3; 
+    width: 100%; 
+    margin-top: 20px; 
 
   .menu-top {
     border-bottom: 1px solid #F5F5F5;
