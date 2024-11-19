@@ -113,6 +113,7 @@
     }
 
     .header-brand {
+      margin-top: 20px;
       order: 1; 
       align-self: flex-start; 
     }
@@ -125,8 +126,9 @@
     display: block;
     order: 2; 
     align-self: flex-end; 
-    margin-top: -80px; 
+    margin-top: -95px; 
     color: #A88658;
+    font-size: 45px;
   }
 
   .header-collapse {
@@ -150,6 +152,7 @@
     order: 3; 
     width: 100%; 
     margin-top: 20px; 
+    margin-bottom: 20px;
 
   .menu-top {
     border-bottom: 1px solid #F5F5F5;
