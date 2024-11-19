@@ -17,15 +17,19 @@ function loadProducts() {
   const productList = document.getElementById('product-list');
   products.forEach(product => {
       const productCard = `
+      
           <div class="col-md-4">
+          <a href="product-details.html?id=${product.id}" style="text-decoration:none";>
+
               <div class="card mb-4">
                   <div class="card-body">
                       <h5 class="card-title">${product.name}</h5>
                     <img src="${product.image}" class="img-fluid"/>
-                      <p class="card-text">${product.description}</p>
-                      <a href="product-details.html?id=${product.id}" class="btn btn-primary">Ver detalhes</a>
+                    <p class="price"><strong></strong>R$${product.price.toFixed(2)}</p>
                   </div>
+
               </div>
+              </a>
           </div>
       `;
       productList.innerHTML += productCard;

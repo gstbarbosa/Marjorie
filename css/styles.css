@@ -59,11 +59,17 @@ color: #fff;
  }
 
 
+
+
+
 .card-title{
  color: #d9a871; /*Texto de cima */
 }
 .card{
   border: #fff; /*borda das imagens */
+  cursor: pointer; 
+
+
 }
 
 /* DETALHES DO PRODUTO*/
@@ -153,6 +159,8 @@ color: #fff;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
 
 
 
