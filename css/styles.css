@@ -2,6 +2,7 @@
 /* COMENTADA PARA AJUDAR NO ESTUDO */
 body {
   font-family: Arial, sans-serif; /* fontes */
+  background-color: #EFEFEF;
 }
 
 .navbar-custom {
@@ -63,7 +64,11 @@ color: #fff;
 
 
 .card-title{
- color: #d9a871; /*Texto de cima */
+  color: #000; 
+  font-size: 14px;
+  font-weight: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
 }
 .card{
   border: #fff; /*borda das imagens */
@@ -115,13 +120,23 @@ color: #fff;
   margin-bottom: 30px; 
 }
 
-.price-suggestions{
+.card-values {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.card-price {
   font-weight: bold;
-  color: #d9a871;
-  height: 20px;
-  width: 100%;
-  font-size: 30px;
-  margin-bottom: 40px; 
+  color: #A88658;
+  margin: 0 0 0 10px;
+  font-size: 22px;
+}
+
+.card-price-sm{
+  color: #808080;
+  font-size: 12px;
+  margin-bottom: 4px;
 }
 
 /*  */
@@ -256,4 +271,15 @@ color: #fff;
   & h1{
     margin-left: 100px;
   }
+}
+.product-image {
+  width: 200px;
+  height: 346px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
