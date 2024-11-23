@@ -1,8 +1,3 @@
-/* Estilo do título "Sugestões" */
-.suggestions-title {
-    margin-left: 20px;
-}
-
 /* Flexbox no contêiner pai para os detalhes do produto e sugestões */
 .product-container {
     display: flex;
