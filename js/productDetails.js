@@ -56,3 +56,20 @@ function selectSize(size) {
     const selectedSize = document.getElementById(`size-${size}`);
     selectedSize.classList.add('selected');
 }
+
+
+
+// Referências aos elementos
+const openCartButton = document.getElementById('open-cart');
+const closeCartButton = document.getElementById('close-cart');
+const sideMenu = document.getElementById('side-menu');
+
+// Abre o menu lateral
+openCartButton.addEventListener('click', () => {
+    sideMenu.classList.add('open');
+});
+
+// Fecha o menu lateral
+closeCartButton.addEventListener('click', () => {
+    sideMenu.classList.remove('open');
+});
